@@ -7,7 +7,7 @@ const OAuth2ClientWithToken = (userId) => {
     const oauth2Client = new google.auth.OAuth2(
         '943856840196-7im8eekcum327obuump98nb823ccmsn1.apps.googleusercontent.com',
         'sJ5XmF98jJ0yHxvr6h7zgsQq',
-        'http://localhost:8000/oauth/oauth2callback'
+        'https://rkonings-meteor-google-api.herokuapp.com/oauth/oauth2callback'
     );
 
     const _token = Tokens.findOne({userId},{ sort: { createdAt: -1 } });
